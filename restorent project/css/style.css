@@ -1,0 +1,144 @@
+:root{
+    --red:crimson;
+    --green:#53BF9D;
+    --yellow:#ffc54d;
+    --white:whitesmoke;
+}
+
+body{
+    margin: 0 ;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.landing{
+    background-image: url('../media/index.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+header a{
+    text-decoration: none;
+    color: var(--yellow);
+    min-width: 120px;
+    
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    padding: 1em;
+    
+}
+#logo{
+    flex: 3;
+    font-size: 1.2em;
+}
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color:var(--green);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding:2em ;
+}
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: var(--yellow);
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20em;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    color:var(--white);
+    border: 1px solid var(--green);
+}
+.menu{
+    display: grid;
+    background: linear-gradient(to left, rgb(24, 23, 23) , rgb(107, 99, 99));
+    color: var(--white);
+    grid-template-columns: repeat(auto-fit , minmax(300px,1fr) );
+}
+#menuheading ,#locationhead {
+    background: linear-gradient(to left, rgb(24, 23, 23) , rgb(107, 99, 99));
+    font-size: 2.5em;
+    color: var(--red);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color: var(--green);
+    font-size: 1.5em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+table tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+table td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+table td:nth-child(2){
+    
+    justify-self: right;
+}
+.maincourse{
+    grid-row: span 2;
+}
+footer{
+    background-color: rgb(58, 56, 56);
+    color: var(--white);
+    padding: .3em;
+}
+header h2 i , nav i {
+    margin-right: .5em;
+}
+.location h2{
+    color: var(--green);
+    font-size: 1.5em;
+}
+.location{
+    display: grid;
+    background: linear-gradient(to left, rgb(24, 23, 23) , rgb(107, 99, 99));
+    color: var(--white);
+    grid-template-columns: repeat(auto-fit , minmax(300px,1fr) );
+    
+}
+address{
+    width: 100%;
+    margin: .7em;
+    
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+    justify-self: left;
+}
+.location h2{
+    display: flex;
+    justify-content: center;
+}
